@@ -15,6 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/plugins/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css" rel="stylesheet">
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
 
 </head>
 
@@ -674,7 +675,7 @@
                                 <div class="form-group">
                                     <div class="col-sm-4 col-sm-offset-2">
                                         <!--<button class="btn btn-white" type="submit">Cancel</button>-->
-                                        <button class="btn btn-primary" type="button">Guardar</button>
+                                        <button class="btn btn-primary" type="button" id="enviar">Guardar</button>
                                     </div>
                                 </div>
                             </form>
@@ -716,6 +717,17 @@
                 });
             });
         </script>
+        <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+         $('#enviar').click(function(){
+            swal({
+                title: "Guardado exitosamente!",
+                text: "",
+                type: "success"
+            });
+        });
+
+   </script>
 </body>
 
 </html>
